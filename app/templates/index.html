@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home page
+{% endblock %}
+
+{% block head %}
+{{ super() }}
+<style type="text/css">
+
+.preamble-text {
+    border: inset;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: gray;
+    border-bottom-color: gray;
+    position: relative;
+    right: 20%;
+    padding: 2%;
+    font-size: 1rem;
+
+}
+  .preamble {
+    font-style: italic;
+    font-size: 3.5rem;
+    line-height: 2;
+  }
+
+  .mickey-hold {
+    position: absolute;
+    right: 35%;
+    bottom: 10%;
+    text-align: center;
+  }
+  .nick-hold {
+    position: absolute;
+    right: 35%;
+    bottom: 50%;
+    text-align: center;
+  }
+  .po-hold {
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+    text-align: center;
+  }
+  .mackenzie-hold {
+    position: absolute;
+    right: 15%;
+    bottom: 50%;
+  }
+
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="container m-5">
+    <div class="main-content-area-container">
+        <div class="preamble-text h-50 w-50 mb-5">
+            <h1 class="preamble">Preamble</h1><br>
+            <h3>“Shoot for the moon. Even if you miss it, you will land among the stars.”</h3><br>
+            <p>Hi! Welcome to Ponimazi!
+                Here at Ponimazi we are dedicated to make sure your questions are answered as well as give you the opportunity to help
+                others who also might have questions! We have created a community that is ready to help you be successful and manage all your thoughts and questions. Register today to be a part of the Ponimazi family!</p>
+        </div>
+        <div class="mickey-hold rounded">
+            <a href="https://www.instagram.com/lalalalisa_m/?hl=en" target="_blank"><img src="{{ url_for('static', filename='mickey-hold.jpg') }}" width="200" height="200" alt=""></a>
+            <h3>Mickey Vang</h3>
+        </div>
+        <div class="nick-hold rounded">
+            <a href="https://www.instagram.com/rkive/?hl=en" target="_blank"><img src="{{ url_for('static', filename='nick-hold.jpg') }}" width="200" height="200" alt=""></a>
+            <h3>Nick Delallo</h3>
+        </div>
+        <div class="mackenzie-hold rounded">
+            <a href="https://www.instagram.com/elizabetholsendaily/?hl=en" target="_blank"><img src="{{ url_for('static', filename='mackenzie-hold.jpg') }}" width="200" height="200" alt=""></a>
+            <h3>Kenzie Teaster</h3>
+        </div>
+        <div class="po-hold rounded">
+            <a href="https://www.instagram.com/taehyung.bighitentertainment/?hl=en" target="_blank"><img src="{{ url_for('static', filename='po-hold.jpg') }}" width="200" height="200" alt=""></a>
+            <h3>Po Nguyen</h3>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+.login-panel {
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    padding: 10px;
+}
+
+body {
+min-height: 100vh;
+}
